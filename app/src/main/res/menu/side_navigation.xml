@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Feed" />
+        <item
+            android:id="@+id/nav_books"
+
+            android:title="Edit / Delete Questions" />
+        <item
+            android:id="@+id/nav_own_ques"
+
+            android:title="Post a new question" />
+        <item
+            android:id="@+id/nav_privacy"
+
+            android:title="Notifications" />
+
+
+
+
+
+</menu>

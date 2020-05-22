@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="jee.techjd.jeeebooks.Books">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Post a New Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="Select a Subject:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_marginLeft="60dp"
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"   >
+
+
+
+                <EditText
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_background"
+                        android:id="@+id/ques_title"
+                        android:hint="Write your Question Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+
+
+
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="10dp"
+                        android:id="@+id/ques_desc"
+                        android:hint="Please provide a Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textSize="20dp"
+                    android:id="@+id/chooseImage"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose an image" />
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/postques"
+            android:textColor="#fff"
+            android:background="@drawable/background"
+            android:text="POST QUESTION"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
